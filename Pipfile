@@ -12,6 +12,9 @@ tox = "*"
 pytest = "*"
 pyml-perceptron = {editable = true,path = "."}
 numpy = "*"
+pandas = "*"
+matplotlib = "*"
+jupyter = "*"
 
 [requires]
 python_version = "3.6"

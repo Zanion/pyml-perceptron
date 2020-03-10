@@ -36,6 +36,7 @@ class Perceptron:
 
         """
         rgen = np.random.RandomState(self.random_state)
+        # Initialize weights to non-zero values
         self.w_ = rgen.normal(loc=0.0, scale=0.01, size=1 + X.shape[1])
         self.errors_ = []
 
