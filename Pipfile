@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+click = "*"
+setuptools = "*"
+tox = "*"
+pytest = "*"
+pyml-perceptron = {editable = true,path = "."}
+numpy = "*"
+
+[requires]
+python_version = "3.6"
