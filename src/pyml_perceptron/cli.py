@@ -21,5 +21,11 @@ def cli():
 
 @click.command()
 def train():
-    df = pd.read_csv(IRIS_DATASET, headers=None)
+    df = pd.read_csv(IRIS_DATASET, header=None)
+
+    # Select setosa and versicolor
+    y = df.iloc[[0:100, 4].values
+    y = np.where(y == 'Iris-setosa', -1, 1)
+
+    # Extract sepal length and petal length
 
